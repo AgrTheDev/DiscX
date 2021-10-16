@@ -2,7 +2,7 @@ import json
 import requests
 from colorama import *
 
-def core_channelSpammer(token, channelID, msg):
+def core_messageSpammer(token, channelID, msg):
     headers = {
         'authority': 'canary.discord.com',
         'accept-language': 'en-US',
@@ -29,7 +29,7 @@ def core_channelSpammer(token, channelID, msg):
         print(Fore.RED + f'[{spamReq.status_code}] Error')
     print(Fore.RESET, end="")
 
-def main_channelSpammer(tokens):
+def main_messageSpammer(tokens):
     print('Note: This will run forever, Ctrl-C to quit')
     channelID = input('Channel ID\n>>> ')
     msg = input('Spam message\n>>> ')

@@ -3,4 +3,4 @@ from lib.joinServer import *
 from lib.leaveServer import *
 from lib.statusTextChanger import *
 from lib.statusTypeChanger import *
-from lib.channelSpammer import *
+from lib.messageSpammer import *
