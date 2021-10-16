@@ -35,4 +35,4 @@ def main_messageSpammer(tokens):
     msg = input('Spam message\n>>> ')
     while True:
         for x in range(len(tokens)):
-            core_channelSpammer(tokens[x], channelID, msg)
+            core_messageSpammer(tokens[x], channelID, msg)
