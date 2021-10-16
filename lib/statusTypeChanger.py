@@ -2,7 +2,7 @@ import json
 import requests
 from colorama import *
 
-def core_statusTextChanger(token, status):
+def core_statusTypeChanger(token, statusType):
     headers = {
         'authority': 'canary.discord.com',
         'accept-language': 'en-US',
@@ -17,19 +17,20 @@ def core_statusTextChanger(token, status):
         'authorization': token
     }
     
-    data = {"custom_status":{"text":status}}
+    data = {"status":statusType}
 
     statusReq = requests.patch(f'https://canary.discord.com/api/v9/users/@me/settings', headers=headers, data=json.dumps(data))
     
     if statusReq.status_code == 200 or statusReq.status_code == 201 or statusReq.status_code == 204:
-        print(Fore.GREEN + f'[{statusReq.status_code}] Successfully changed status text')
+        print(Fore.GREEN + f'[{statusReq.status_code}] Successfully changed status type')
     elif statusReq.status_code == 304:
         print(Fore.YELLOW + '[304] Not modified')
     else:
         print(Fore.RED + f'[{statusReq.status_code}] Error')
     print(Fore.RESET, end="")
 
-def main_statusTextChanger(tokens):
-    status = input('Account status text\n>>> ')
+def main_statusTypeChanger(tokens):
+    status = input('Account status type (Online, Idle, DnD, Invisible)\n>>> ')
+    statusType = status.lower()
     for x in range(len(tokens)):
-        core_statusTextChanger(tokens[x], status)
+        core_statusTypeChanger(tokens[x], statusType)
