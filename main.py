@@ -30,18 +30,18 @@ def main():
 
     '''
     options = '''
-    [1]: Server join bot / [2]: Server leave bot / [3]: Another
+    [1]: Server Join Bot / [2]: Server Leave Bot / [3]: Status Text Changer
     '''
     print(Fore.BLUE + "Welcome to...")
     time.sleep(2)
     print(logo)
     time.sleep(1)
-    print(Fore.GREEN + "~" * 70)
+    print(Fore.GREEN + "~" * 75)
     print(options)
-    print(Fore.GREEN + "~" * 70)
+    print(Fore.GREEN + "~" * 75)
     print(Fore.RESET, end="")
     option = input('>>> ')
-    features = [main_joinServer, main_leaveServer]
+    features = [main_joinServer, main_leaveServer, main_statusTextChanger]
     cls()
     features[int(option) - 1](tokens)
     print(Fore.BLUE + "Finished the task! Returning to menu (4)" + Fore.RESET)
