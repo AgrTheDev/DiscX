@@ -6,3 +6,4 @@ from lib.statusTypeChanger import *
 from lib.messageSpammer import *
 from lib.massChannelCreator import *
 from lib.massChannelDeleter import *
+from lib.embedMessage import *
