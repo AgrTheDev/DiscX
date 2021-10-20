@@ -30,7 +30,7 @@ def core_embedMessage(token, channelID, embedTitle, embedDesc):
     print(Fore.RESET, end="")
 
 def main_embedMessage(tokens):
-    token = input('Your token (Requires MANAGE_CHANNELS permission in guild)\n>>> ')
+    token = input('Your token\n>>> ')
     channelID = input('Channel ID\n>>> ')
     embedTitle = input('Embed title\n>>> ')
     embedDesc = input('Embed description\n>>> ')
