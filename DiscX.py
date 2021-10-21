@@ -32,6 +32,7 @@ def main():
     [1]: Server Join Bot / [2]: Server Leave Bot / [3]: Status Text Changer
     [4]: Status Type Changer / [5]: Message Spammer / [6]: Mass Channel Creator
     [7]: Mass Channel Deleter / [8]: Embed Message / [9]: Rainbow Role-ify
+    [10]: Token Checker
     '''
     print(Fore.BLUE + "Welcome to...")
     time.sleep(2)
@@ -42,7 +43,7 @@ def main():
     print(Fore.GREEN + "~" * 75)
     print(Fore.RESET, end="")
     option = input('>>> ')
-    features = [main_joinServer, main_leaveServer, main_statusTextChanger, main_statusTypeChanger, main_messageSpammer, main_massChannelCreator, main_massChannelDeleter, main_embedMessage, main_rainbowRole]
+    features = [main_joinServer, main_leaveServer, main_statusTextChanger, main_statusTypeChanger, main_messageSpammer, main_massChannelCreator, main_massChannelDeleter, main_embedMessage, main_rainbowRole, main_tokenChecker]
     cls()
     features[int(option) - 1](tokens)
     print(Fore.BLUE + "Finished the task! Returning to menu (4)" + Fore.RESET)
