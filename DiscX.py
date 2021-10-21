@@ -38,9 +38,9 @@ def main():
     time.sleep(2)
     print(logo)
     time.sleep(1)
-    print(Fore.GREEN + "~" * 75)
+    print(Fore.GREEN + "~" * 80)
     print(options)
-    print(Fore.GREEN + "~" * 75)
+    print(Fore.GREEN + "~" * 80)
     print(Fore.RESET, end="")
     option = input('>>> ')
     features = [main_joinServer, main_leaveServer, main_statusTextChanger, main_statusTypeChanger, main_messageSpammer, main_massChannelCreator, main_massChannelDeleter, main_embedMessage, main_rainbowRole, main_tokenChecker]
