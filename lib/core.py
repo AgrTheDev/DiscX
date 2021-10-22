@@ -9,3 +9,5 @@ from lib.massChannelDeleter import *
 from lib.embedMessage import *
 from lib.rainbowRole import *
 from lib.tokenChecker import *
+from lib.webhookSpammer import *
+from lib.webhookDeleter import *
