@@ -12,8 +12,3 @@
 
 Contributors are welcome.
 Just make a pull request!
-
-## Extra
-
-Join our discord server!
-https://discord.gg/YbJ7Beh2Dj
